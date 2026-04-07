@@ -1,17 +1,46 @@
-# projeto_flutter
+# Projeto Flutter - Gerenciador de Tarefas
 
-A new Flutter project.
+Este é um aplicativo Flutter para organizar tarefas do dia a dia, com:
+- Cadastro de novas tarefas
+- Marcar como concluídas
+- Remover tarefas
+- Interface moderna com gradiente e efeito blur
 
-## Getting Started
+## Estrutura do Código
 
-This project is a starting point for a Flutter application.
+### `lib/tarefa.dart`
+Define a **classe Tarefa**, que é o modelo de dados:
+- `titulo`: texto da tarefa.
+- `concluida`: booleano que indica se está concluída.
+- Métodos auxiliares como `alternarConclusao()` para mudar o estado.
 
-A few resources to get you started if this is your first Flutter project:
+### `lib/tarefas.dart`
+Tela principal de tarefas:
+- Usa `StatefulWidget` para manter a lista de tarefas.
+- Funções:
+  - `_adicionarTarefa(String titulo)`: adiciona uma nova tarefa.
+  - `_removerTarefa(int index)`: remove uma tarefa.
+  - `_alternarTarefa(int index)`: marca ou desmarca como concluída.
+  - `_ordenarTarefas()`: organiza tarefas, deixando pendentes primeiro.
+- Interface:
+  - `ListView.builder` exibe cada tarefa em um **Card translúcido**.
+  - `Checkbox` para marcar como concluída.
+  - `IconButton` para excluir.
+  - Botão **Nova tarefa** abre um `Dialog` estilizado com blur para cadastrar.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### `lib/main.dart`
+Ponto de entrada do app:
+- Configura o `MaterialApp`.
+- Define a tela inicial e navegação para outras páginas (`login.dart`, `cadastro.dart`, `calendario.dart`, etc.).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Outras telas
+- `login.dart`: tela de login.
+- `cadastro.dart`: tela de cadastro de usuário.
+- `calendario.dart`: tela para escolher datas e visualizar tarefas.
+- Cada arquivo segue o padrão Flutter de `StatelessWidget` ou `StatefulWidget`.
+
+## Como rodar o projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seuusuario/projeto_flutter.git
