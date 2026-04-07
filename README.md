@@ -34,10 +34,29 @@ Ponto de entrada do app:
 - Define a tela inicial e navegação para outras páginas (`login.dart`, `cadastro.dart`, `calendario.dart`, etc.).
 
 ### Outras telas
-- `login.dart`: tela de login.
-- `cadastro.dart`: tela de cadastro de usuário.
-- `calendario.dart`: tela para escolher datas e visualizar tarefas.
+- `login.dart` [tela de login]
+- `cadastro.dart`: [tela de cadastro de usuário]
+- `calendario.dart`: [tela para escolher datas e visualizar tarefas]
+- `tarefas.dart`:[ adicionar tarefa]
 - Cada arquivo segue o padrão Flutter de `StatelessWidget` ou `StatefulWidget`.
+  ##Imagens do Projeto
+  <img src="assets/login.png" alt="Tela de Login" width="300"/>
+   <img src="assets/cadastro login.png" alt="cadastro" width="300"/>
+  <img src="assets/erro login.png" alt="Tela erro Login" width="300"/>
+  <img src="assets/calendario.png" alt="Tela de calendario" width="300"/>
+  <img src="assets/adicinando.png" alt="Tela de adicionar tarefa" width="300"/>
+  <img src="assets/adicionar tarefa.png" alt="Tela tarefas" width="300"/>
+   <img src="assets/tarefa registrada.png" alt="registrada" width="300"/>
+  <img src="assets/tarefa concluida fica riscado.png" alt="Tarefa" width="300"/>
+ 
+  
+
+
+
+
+
+
+
 
 ## Como rodar o projeto
 
