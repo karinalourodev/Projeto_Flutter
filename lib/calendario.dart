@@ -15,7 +15,6 @@ class _CalendarPageState extends State<CalendarPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // removi o AppBar para dar destaque ao fundo
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
