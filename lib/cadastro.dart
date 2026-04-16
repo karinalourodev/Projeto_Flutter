@@ -26,7 +26,6 @@ class _CadastroPageState extends State<CadastroPage> {
         ),
         child: Center(
           child: SingleChildScrollView(
-            // evita overflow em telas pequenas
             child: ClipRRect(
               borderRadius: BorderRadius.circular(20),
               child: BackdropFilter(
